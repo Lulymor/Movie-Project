@@ -1,0 +1,62 @@
+body {
+    background-image: url("images/theater3.jpg");
+    background-size: 1950px;
+    
+    font-family:'Righteous', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 245px;
+    height: 245px;
+    resize: both;
+    overflow: scroll;
+}
+h1{
+position: relative;
+left: 850px; 
+font-size: 80px;
+color: whitesmoke;
+bottom: 45px;
+}
+
+#movie-img {
+position: relative;
+left: 450px;
+bottom: 45px;
+}
+
+h2{
+position: relative;
+left: 1000px;
+bottom: 500px;
+}
+
+#description-display {
+position: relative;
+left: 1000px;
+bottom: 500px;
+}
+
+#where-to-watch{
+position: relative;
+left: 1000px;
+bottom: 500px;
+}
+
+#rating-form {
+position: relative;
+left: 1000px;
+bottom: 500px;
+}
+
+#movies-list-left {
+    list-style-type: none;
+position: relative;
+bottom: 950px;
+}
+
+#movies-list-right {
+    list-style-type: none;
+position: relative;
+bottom: 1581px;
+left: 1650px;
+}
