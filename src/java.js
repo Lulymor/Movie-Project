@@ -1,42 +1,31 @@
-fetch('http://localhost:3000/movie-listings')
-.then(response => response.json())
-.then(movies => {
-
-    console.log(movies);
-    
-    const movieListLeft = document.getElementById('movies-list-left');
-    const movieListRight = document.getElementById('movies-list-right');
-
-    movieDetails(movies[0])
-
-})
+const rightList = document.getElementById('movies-list-right');
+const leftList = document.getElementById('movies-list-left')
+fetch('http://localhost:3000/movie-listing-right')
+    .then(response => response.json())
+    .then(movies => renderMoviesRight(movies))
 
 
-function movieDetails(movie) {
+function renderMoviesRight(movies) {
+        movies.movies.forEach(movie => {
+            const newImage = document.createElement('img')
+            const newLi = document.createElement('li')
+            newLi.appendChild(newImage)
+            newImage.src = movie.image
+            rightList.appendChild(newLi);
 
-    let movieName = document.getElementById('movie-name');
-    movieName.textContent = movie.name;
-
-    let movieImage = document.getElementById('movie-img');
-    movieImage.src = movie.image;
-
-    let movieSynopsis = document.getElementById('description-display');
-    movieSynopsis = movie.synopsis;
-
-    let movieReviews = document.getElementById('reviews');
-    movieReviews.textContent = movie.reviews;
-
-    let movieStarring = document.getElementById('starring');
-    movieStarring.textContent = movie.starring;
-
-
-
+        });
 }
-
-
-const submitReview = document.getElementById('reviews-form')
-
-addEventListener("submit", (event) => {
+    
+fetch('http://localhost:3000/movie-listing-left')
+    .then(response => response.json())
+    .then(movies => renderMoviesLeft(movies))
    
-        event.preventDefault()}
-    )
+function renderMoviesLeft(movies) {
+    movies.forEach(movie => {
+        const newImage = document.createElement('img')
+        const newLi = document.createElement('li')
+        newLi.appendChild(newImage)
+        newImage.src = movie.image
+        leftList.appendChild(newLi);
+    })
+}
