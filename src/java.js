@@ -9,14 +9,7 @@ fetch('http://localhost:3000/movie-listings')
 
     movieDetails(movies[0])
 
-    
-
-
-
 })
-
-
-
 
 
 function movieDetails(movie) {
