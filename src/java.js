@@ -36,10 +36,7 @@ function movieDetails(movie) {
 
 const submitReview = document.getElementById('reviews-form')
 
-if (submitReview != null) {
-    addEventListener("submit", (event) => {
-        console.log("stuff")
+addEventListener("submit", (event) => {
+   
         event.preventDefault()}
     )
-
-}
