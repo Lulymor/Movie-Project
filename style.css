@@ -14,46 +14,46 @@ bottom: 20px;
  
 #movie-img {
 position: relative;
-left: 260px;
+left: 290px;
 bottom: 45px;
-width: 25%;
+width: 350px;
 }
 
 h2{
 position: relative;
-left: 1000px;
-bottom: 500px;
+left: 750px;
+bottom: 520px;
 }
 
 #description-display {
 position: relative;
-left: 1000px;
-bottom: 500px;
+left: 750px;
+bottom: 520px;
 width: 15%;
 }
 
-#where-to-watch{
+#show-times{
 position: relative;
-left: 1000px;
+left: 750px;
 bottom: 500px;
 }
 #reviews-title {
 position: relative;
-left: 1000px;
-bottom: 500px;
+left: 1300px;
+bottom: 820px;
 }
 
 #reviews {
 position: relative;
-left: 1000px;
-bottom: 500px;
+left: 1200px;
+bottom: 820px;
 width: 15%;
 }
 
 #reviews-form {
 position: relative;
-left: 1000px;
-bottom: 500px;
+left: 1250px;
+bottom: 520px;
 }
 
 #movies-list-left {
@@ -82,4 +82,7 @@ width: 15%;
   text-align: center;
   width: 250px;
   cursor: pointer;
+  position: relative;
+ top: 10px;
+
 }
