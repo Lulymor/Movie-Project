@@ -1,27 +1,22 @@
 body {
-    background-image: url("images/theater3.jpg");
-    background-size: 1950px;
-    
-    font-family:'Righteous', cursive;
-    background-repeat: no-repeat;
+    background: url("images/theater3.jpg") no-repeat center fixed;
     background-size: cover;
-    width: 245px;
-    height: 245px;
-    resize: both;
-    overflow: scroll;
+    font-family: Righteous;
+    overflow: hidden;
 }
 h1{
 position: relative;
 left: 850px; 
-font-size: 80px;
+font-size: 65px;
 color: whitesmoke;
-bottom: 45px;
+bottom: 20px;
 }
-
+ 
 #movie-img {
 position: relative;
-left: 450px;
+left: 260px;
 bottom: 45px;
+width: 25%;
 }
 
 h2{
@@ -34,6 +29,7 @@ bottom: 500px;
 position: relative;
 left: 1000px;
 bottom: 500px;
+width: 15%;
 }
 
 #where-to-watch{
@@ -41,11 +37,17 @@ position: relative;
 left: 1000px;
 bottom: 500px;
 }
-#reviews {
-    position: relative;
+#reviews-title {
+position: relative;
 left: 1000px;
 bottom: 500px;
+}
 
+#reviews {
+position: relative;
+left: 1000px;
+bottom: 500px;
+width: 15%;
 }
 
 #reviews-form {
@@ -55,14 +57,29 @@ bottom: 500px;
 }
 
 #movies-list-left {
-    list-style-type: none;
+list-style-type: none;
 position: relative;
-bottom: 950px;
+bottom: 1050px;
+width: 15%;
 }
 
 #movies-list-right {
-    list-style-type: none;
+list-style-type: none;
 position: relative;
-bottom: 1581px;
+bottom: 1681px;
 left: 1650px;
+width: 15%;
+}
+#review-form-text {
+    line-height: 25px;
+    height: 30px;
+    text-align: center;
+    width: 250px;
+}
+#submit-button {
+    line-height: 25px;
+  height: 25px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
 }

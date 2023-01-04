@@ -9,7 +9,7 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); </style>
 </head>
 <body>
-
+<span id="page-wrapper">
     <h1>Movies</h1>
     <img id="movie-img" src="images/LaLaLand.jpeg" alt="Lalaland">
 <h2 id="movie-name">Title: La La Land</h1>
@@ -20,10 +20,13 @@
      and the dreams they worked so hard to maintain in each other 
      threaten to rip them apart.</p>
      <p id="where-to-watch">Where to watch: <br> Amazon Prime $2.99 rent</p>
-     <p id="reviews">A revival of the musical</p>
-<form id="reviews-form"> Review <br>
-    <input type="text" id="review-text" > <br>
-    <input type="submit" value="Submit Review">
+     <h3 id="reviews-title">Reviews</h3>
+     <ul id="reviews"> 
+        <li> A revival of the musical</li>
+    </ul>
+<form id="reviews-form"> Leave your review: <br>
+    <input type="text" id="review-form-text" > <br>
+    <input type="submit" value="Submit Review" id="submit-button">
 </form>
 <ul id="movies-list-left">
    <li> <img id="first-movie-left"src="images/violent night.jpg" alt="violent-night" width="150"></li><br>
@@ -37,5 +40,6 @@
     <li> <img id="third-movie-right"src="images/violent night.jpg" alt="violent-night"width="150"></li>
      
  </ul>
+</span>
     <link rel="stylesheet" href="style.css">
 </body>
