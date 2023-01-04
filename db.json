@@ -1,5 +1,5 @@
-{
-    "movie-listings": [
+{ "movie-listing-right": {
+    "movies": [
       {
         "id": 1,
         "name": "The Revenant",
@@ -15,7 +15,7 @@
         "name": "Parasite",
         "synopsis": "A down-and-out family devises a plan to profit off of an upper-class family through increasingly complex methods of deceit",
         "blurb": "Parasite (2019), pulse-pounding thriller",
-        "image": "https://www.google.com/aclk?sa=l&ai=DChcSEwiCoumq0Zr8AhXZ9sgKHSRQAb8YABAFGgJxdQ&sig=AOD64_24P-oAElxPuWbS_2HGjR566lBCJA&adurl&ctype=5&ved=2ahUKEwjRwNqq0Zr8AhXho3IEHf40ADcQvhd6BAgBEFc",
+        "image": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/parasite-24x36_480x.progressive.jpg?v=1590609910",
         "starring": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong", "Choi Woo-shik"],
         "showtimes": ["1:00", "4:30", "7:00", "9:30"],
         "reviews": ["Suspenseful and anxiety-inducing", "The best film of 2019", "Worth watching twice"]
@@ -29,36 +29,38 @@
         "starring": ["Daniel Kaluuya", "Allison Williams", "Bradley Whitford", "Caleb Landry Jones", "Catherine Keener", "Lil Rey Howery"],
         "showtimes": ["11:00", "1:30", "4:00", "8:00"],
         "reviews": ["Original in every way", "Brilliant writing", "Jordan Peele proves he can do more than comedy"]
-      },
-      {
-        "id": 4,
-        "name": "Everything Everywhere All At Once",
-        "synopsis": "The existence of the universe is placed in jeopardy when a Los Angeles family's laundromat is audited by the IRS",
-        "blurb": "Everything Everywhere All At Once (2021), you've never seen anything like this!",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxMbI5OqigrVaKqS-mfPrNP_WD6FgFx6e21A&usqp=CAU",
-        "starring": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan", "Jamie Lee Curtis"],
-        "showtimes": ["12:00", "3:30", "7:30"],
-        "reviews": ["There has never been another film quite like this", "Deserves to be viewed more than once"]
-      },
-      {
-        "id": 5,
-        "name": "La La Land",
-        "synopsis": "Musical rom-com about two struggling L.A. artists who find each other while pursuing their dreams",
-        "blurb": "La La Land (2016), a love-letter to Hollywood's bygone era",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-h7Idm6M8gzKLztc_sMsLD9vKcwwQgoUSA&usqp=CAU",
-        "starring": ["Emma Stone", "Ryan Gosling"],
-        "showtimes": ["11:30", "3:15", "6:00", "9:15"],
-        "reviews": ["A revival of the musical", "Extraordinary performances", "Fantastic songs"]
-      },
-      {
-        "id": 6,
-        "name": "GoodFellas",
-        "synopsis": "The rise and fall of New York mafiosos in the dying days of organized crime",
-        "blurb": "Goodfellas (1990), back on the big screen for one-night-only",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzi019xCvJrFDcdyWmSCqLhKE5w1kcywGjLg&usqp=CAU",
-        "starring": ["Ray Liotta", "Robert DeNiro", "Lorraine Bracco", "Joe Pesci"],
-        "showtimes": "Special Showing: 10:00",
-        "reviews": ["One of the greatest films ever made"]
       }
     ]
+  },
+   "movie-listing-left": [ {
+    "id": 4,
+    "name": "Everything Everywhere All At Once",
+    "synopsis": "The existence of the universe is placed in jeopardy when a Los Angeles family's laundromat is audited by the IRS",
+    "blurb": "Everything Everywhere All At Once (2021), you've never seen anything like this!",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxMbI5OqigrVaKqS-mfPrNP_WD6FgFx6e21A&usqp=CAU",
+    "starring": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan", "Jamie Lee Curtis"],
+    "showtimes": ["12:00", "3:30", "7:30"],
+    "reviews": ["There has never been another film quite like this", "Deserves to be viewed more than once"]
+  },
+  {
+    "id": 5,
+    "name": "La La Land",
+    "synopsis": "Musical rom-com about two struggling L.A. artists who find each other while pursuing their dreams",
+    "blurb": "La La Land (2016), a love-letter to Hollywood's bygone era",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-h7Idm6M8gzKLztc_sMsLD9vKcwwQgoUSA&usqp=CAU",
+    "starring": ["Emma Stone", "Ryan Gosling"],
+    "showtimes": ["11:30", "3:15", "6:00", "9:15"],
+    "reviews": ["A revival of the musical", "Extraordinary performances", "Fantastic songs"]
+  },
+  {
+    "id": 6,
+    "name": "GoodFellas",
+    "synopsis": "The rise and fall of New York mafiosos in the dying days of organized crime",
+    "blurb": "Goodfellas (1990), back on the big screen for one-night-only",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzi019xCvJrFDcdyWmSCqLhKE5w1kcywGjLg&usqp=CAU",
+    "starring": ["Ray Liotta", "Robert DeNiro", "Lorraine Bracco", "Joe Pesci"],
+    "showtimes": "Special Showing: 10:00",
+    "reviews": ["One of the greatest films ever made"]
   }
+]
+}
