@@ -4,6 +4,14 @@ h1 {
     color: whitesmoke;
 }
 
+#movie-times {
+    border: 2px solid #ba2930;
+    border-radius: 5px;
+    background-color: #ba2930;
+    color: white;
+
+}
+
 #movie-img {
     position: relative;
     top: 50px;
@@ -13,43 +21,24 @@ h1 {
     min-height: 300px;
 }
 
-
-#starring {
-    position: relative;
-
-
-}
-
-#reviews-title {
-    position: relative;
-
-
-
-}
-
 #reviews {
     position: relative;
     margin: 0;
     padding: 0;
-    list-style: none;
-
+    list-style-type: none;
 
 }
 
 #reviews-form {
     position: relative;
     top: 55px;
-
-
-
+    margin: 0px;
 }
 
 .movies-list {
     list-style: none;
     margin: 0;
     padding: 0;
-
-
 }
 
 .movies-list img {
@@ -57,7 +46,7 @@ h1 {
     max-width: 118px;
     margin: 2px;
     border: 2px solid black;
-    padding: 4px;
+    padding: 5px;
     background-color: white;
 }
 
@@ -75,11 +64,12 @@ h1 {
 
     line-height: 25px;
     height: 25px;
-    max-width: 250px;
     cursor: pointer;
     position: relative;
-
-    border: 2px solid #ba2930;
+    max-width: 100px;
+    padding: 1px;
+    border: 1px solid #ba2930;
+    background-color: #ba2930;
+    color: white;
     border-radius: 5px;
-    font-size: 15px;
 }
