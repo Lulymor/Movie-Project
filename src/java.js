@@ -47,8 +47,8 @@ newReviews.textContent = ""
     const newLi = document.createElement('li')
     newLi.textContent = reviews
     newReviews.appendChild(newLi)
-        movieImage.addEventListener('mouseover', (event) => {
-        })
+        // movieImage.addEventListener('mouseover', (event) => {
+        // })
 })
 const starring = document.getElementById('starring')
 starring.textContent =`Starring: ${movies.starring}`
