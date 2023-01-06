@@ -50,8 +50,19 @@ function renderMovies(movies) {
         // movieImage.addEventListener('mouseover', (event) => {
         // })
     })
+    var showTimes = movies.showtimes;
+
     const starring = document.getElementById('starring')
     starring.textContent = `Starring: ${movies.starring}`
+    const movieTimes = document.getElementById('movie-times')
+    movieTimes.addEventListener('click', (event) => {
+        event.preventDefault()
+        swal({
+            title: "Movie Times:",
+            text: `${showTimes    }`
+
+        });
+    })
 }
 const newReviewForm = document.getElementById('reviews-form')
 newReviewForm.addEventListener('submit', (event) => {
@@ -64,8 +75,10 @@ newReviewForm.addEventListener('submit', (event) => {
     reviewList.appendChild(reviewLI)
     newReviewForm.reset();
 })
-const movieTimes = document.getElementById('movie-times')
-movieTimes.addEventListener('click', (event) => {
-    event.preventDefault()
-    movieTimesAlert
-})
+// const movieTimes = document.getElementById('movie-times')
+// movieTimes.addEventListener('click', (event) => {
+//     event.preventDefault()
+//     showTimes()
+//     // swal('Movie Times:", "...and here's the text!'');
+// })
+// function showTimes(movies)
