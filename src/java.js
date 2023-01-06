@@ -1,83 +1,71 @@
-// fetch('http://localhost:3000/movie-listings')
-// .then(response => response.json())
-// .then(movies => {
-
-//     console.log(movies);
-    
-//     const movieListLeft = document.getElementById('movies-list-left');
-//     const movieListRight = document.getElementById('movies-list-right');
-
-//     movieDetails(movies[0])
-
-// })
-
-
-// function movieDetails(movie) {
-
-//     let movieName = document.getElementById('movie-name');
-//     movieName.textContent = movie.name;
-
-//     let movieImage = document.getElementById('movie-img');
-//     movieImage.src = movie.image;
-
-//     let movieSynopsis = document.getElementById('description-display');
-//     movieSynopsis = movie.synopsis;
-
-//     let movieReviews = document.getElementById('reviews');
-//     movieReviews.textContent = movie.reviews;
-
-//     let movieStarring = document.getElementById('starring');
-//     movieStarring.textContent = movie.starring;
-
-
-
-// }
-
-
-// const submitReview = document.getElementById('reviews-form')
-
-// addEventListener("submit", (event) => {
-   
-//         event.preventDefault()}
-//     )
-
-
-fetch('http://localhost:3000/movie-listings')
-.then(response => response.json())
-.then(movies => {
-    movieNav = document.getElementById('movie-list-left')
-    
-    movies.forEach(movie => {
-        const movieImage = document.createElement('img')
-        movieImage.src = movie.image
-
-        movieImage.addEventListener('click', () => {
-            displayMovieDetails(movie)
+const rightList = document.getElementById('movies-list-right');
+const leftList = document.getElementById('movies-list-left')
+fetch('http://localhost:3000/movie-listing-right')
+    .then(response => response.json())
+    .then(movies => renderMoviesRight(movies))
+function renderMoviesRight(movies) {
+    movies.movies.forEach(movie => {
+        const newImage = document.createElement('img')
+        const newLi = document.createElement('li')
+        newLi.appendChild(newImage)
+        newImage.src = movie.image
+        rightList.appendChild(newLi);
+        newImage.addEventListener('mouseover', () => {
+            renderMovies(movie);
         })
-        movieNav.appendChild(movieImage)
     })
-    displayMovieDetails(movies[0])
-})
-
-function displayMovieDetails(movie) {
-
-    const name = document.getElementById('movie-name')
-    name.textContent = movie.name
-
-    const image = document.getElementById('movie-img')
-    image.src = movie.image
-
-    const synopsis = document.getElementById('synopsis-display')
-    synopsis.textContent = movie.synopsis
-
-    const showtimes = document.getElementById('show-times')
-    showtimes.textContent = movie.showtimes
-
-    // const reviews = document.getElementById('reviews')
-    // reviews.textContent = reviews.forEach(review => {
-    //     let newLIreview = document.createElement('li');
-    //     newLIreview.textContent = review
-    //     reviews.appendChild(newLIreview);
-
-
 }
+fetch('http://localhost:3000/movie-listing-left')
+    .then(response => response.json())
+    .then(movies => renderMoviesLeft(movies))
+function renderMoviesLeft(movies) {
+    movies.forEach(movie => {
+        const newImage = document.createElement('img')
+        newImage.alt = movie.blurb
+        const newLi = document.createElement('li')
+        newLi.appendChild(newImage)
+        newImage.src = movie.image
+        leftList.appendChild(newLi);
+        newImage.addEventListener('mouseover', () => {
+            renderMovies(movie)
+        })
+    })
+}
+fetch('http://localhost:3000/movie-listing-right')
+    .then(response => response.json())
+    .then(movies => renderMovies(movies.movies[0]))
+function renderMovies(movies) {
+    const movieName = document.getElementById('movie-name')
+    const synopsis = document.getElementById('description-display')
+    const movieImage = document.getElementById('movie-img')
+    const newReviews = document.getElementById('reviews')
+    newReviews.textContent = ""
+    movieName.textContent = movies.name
+    synopsis.textContent = movies.synopsis
+    movieImage.src = movies.image
+    movies.reviews.forEach(reviews => {
+        const newLi = document.createElement('li')
+        newLi.textContent = reviews
+        newReviews.appendChild(newLi)
+        // movieImage.addEventListener('mouseover', (event) => {
+        // })
+    })
+    const starring = document.getElementById('starring')
+    starring.textContent = `Starring: ${movies.starring}`
+}
+const newReviewForm = document.getElementById('reviews-form')
+newReviewForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(newReviewForm)
+    const newReview = document.getElementById('review-form-text').value
+    const reviewList = document.getElementById('reviews')
+    const reviewLI = document.createElement('li')
+    reviewLI.textContent = newReview
+    reviewList.appendChild(reviewLI)
+    newReviewForm.reset();
+})
+const movieTimes = document.getElementById('movie-times')
+movieTimes.addEventListener('click', (event) => {
+    event.preventDefault()
+    movieTimesAlert
+})
