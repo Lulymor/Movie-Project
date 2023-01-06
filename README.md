@@ -1,4 +1,5 @@
 ## Movie-Project
+![read me image](https://user-images.githubusercontent.com/94796196/211040820-2a4345c0-1356-4aae-a90a-02deba4fac42.jpeg)
 ## Introduction
 The Movie-Project is a website designed to display the information and upcoming showtimes of popular films playing in a local theater. It provides users with information pertaining to the titles, descriptions, showtimes, and actors starring in these pictures.
 ## Project Goals
